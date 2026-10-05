@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Impact Everything - New Associate Onboarding</title>
+<meta name="description" content="Impact Everything new associate onboarding: profile, mission and culture, the Impact Everything standard, how you earn, and your first 30 days.">
+<style>
+:root{--ie:#6D28D9;--ie2:#7C3AED;--ie3:#3B1080;--tint:#F6F4FE;--line:#E8E5F2;--ink:#0E0C15;--mut:#6B7280}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:#fff;color:var(--ink)}
+body{font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased;line-height:1.5}
+a{color:var(--ie)}
+.mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--ie);font-weight:700}
+.wrap{max-width:1000px;margin:0 auto;padding:0 18px}
+.hero{position:relative;padding:44px 0 56px;overflow:hidden}
+.glow{position:absolute;left:50%;top:-340px;width:900px;height:620px;margin-left:-450px;pointer-events:none;background:radial-gradient(closest-side,rgba(124,58,237,.20),rgba(124,58,237,0) 72%)}
+.dots{position:absolute;inset:0;pointer-events:none;opacity:.5;background-image:radial-gradient(rgba(109,40,217,.16) 1px,transparent 1px);background-size:24px 24px;-webkit-mask-image:linear-gradient(180deg,rgba(0,0,0,.55),rgba(0,0,0,0) 62%);mask-image:linear-gradient(180deg,rgba(0,0,0,.55),rgba(0,0,0,0) 62%)}
+.hero-in{position:relative}
+.display{font-size:clamp(34px,7.2vw,66px);line-height:.96;letter-spacing:-.035em;font-weight:800;margin:16px 0 18px;text-transform:uppercase;max-width:15ch}
+.sub{font-size:clamp(16px,2.1vw,19px);line-height:1.55;color:var(--mut);max-width:60ch}
+.badge{display:inline-flex;align-items:center;gap:10px;margin:26px 0 20px;padding:11px 20px;border-radius:999px;background:linear-gradient(135deg,var(--ie2),var(--ie3));color:#fff;font-weight:800;font-size:13px;letter-spacing:.18em;box-shadow:0 16px 36px -18px rgba(109,40,217,.9)}
+.onelines{display:grid;gap:4px;margin-bottom:30px}
+.oneline{display:flex;align-items:center;gap:12px;font-size:clamp(17px,3vw,25px);font-weight:700;letter-spacing:-.015em}
+.dot{width:8px;height:8px;border-radius:999px;background:var(--ie2);flex:0 0 auto}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--ie);color:#fff;border:0;border-radius:14px;padding:14px 22px;font-size:15px;font-weight:700;font-family:inherit;cursor:pointer;transition:transform .15s,background .2s,box-shadow .2s;box-shadow:0 14px 30px -16px rgba(109,40,217,.9);text-decoration:none}
+.btn:hover{background:var(--ie2);transform:translateY(-1px)}
+.btn.lg{padding:18px 30px;font-size:16px}
+.btn.ghost{background:#fff;color:var(--ie);border:1px solid var(--line);box-shadow:none}
+.btn.ghost:hover{background:var(--tint);border-color:var(--ie2)}
+.btn.sm{padding:9px 14px;font-size:13px;border-radius:11px}
+.btn[disabled]{opacity:.5;cursor:not-allowed;transform:none;box-shadow:none}
+.quiet{background:none;border:0;color:var(--mut);font-size:13px;font-family:inherit;cursor:pointer;text-decoration:underline;text-underline-offset:3px;padding:6px 0}
+.quiet:hover{color:var(--ie)}
+.rail{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);padding:12px 0 10px}
+.rail-top{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.brand{display:flex;align-items:center;gap:10px}
+.mark{display:inline-flex;align-items:center;justify-content:center;width:30px;height:30px;border-radius:9px;background:var(--ie);color:#fff;font-weight:800;font-size:12px}
+.brandname{color:var(--ink)}
+.count{color:var(--mut)}
+.segs{display:grid;grid-template-columns:repeat(7,1fr);gap:6px;margin:11px 0 9px}
+.seg{height:5px;border-radius:999px;background:#EDEAF7;transition:background .35s}
+.seg.done{background:var(--ie)}
+.seg.now{background:var(--ie2)}
+.rail-bot{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.stepname{color:var(--ie2)}
+.stage{padding:26px 0 90px}
+.stephead{margin-bottom:22px}
+h1.h1{font-size:clamp(24px,4.6vw,36px);font-weight:800;letter-spacing:-.03em;margin:10px 0 8px;text-transform:uppercase;line-height:1.05}
+h2.h2{font-size:clamp(20px,3.4vw,27px);font-weight:800;letter-spacing:-.025em;margin:8px 0}
+h3.h3{font-size:15px;font-weight:800;margin:0}
+p.p{color:#3F3D4D;line-height:1.62;font-size:15px;margin:0}
+.card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:22px;margin-bottom:16px;box-shadow:0 1px 2px rgba(16,12,32,.04)}
+.card.tint{background:var(--tint);border-color:#E2DBFB}
+.card.dark{background:linear-gradient(150deg,#1A1030,#2C1660 62%,#3B1080);color:#fff;border:0}
+.card.dark .p,.card.dark .h2,.card.dark .h3{color:#fff}
+.head{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin-bottom:14px;flex-wrap:wrap}
+.tag{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--mut);font-weight:700}
+.grid2{display:grid;grid-template-columns:1fr;gap:14px}
+@media(min-width:700px){.grid2{grid-template-columns:1fr 1fr}}
+.field{display:flex;flex-direction:column;gap:6px;min-width:0}
+.field.full{grid-column:1/-1}
+.label{font-size:11px;font-weight:800;letter-spacing:.09em;text-transform:uppercase;color:#5B5870}
+.req{color:#B91C1C}
+.input{border:1px solid var(--line);border-radius:12px;padding:12px 14px;font-size:15px;background:#fff;color:var(--ink);font-family:inherit;width:100%}
+.input:focus{outline:none;border-color:var(--ie2);box-shadow:0 0 0 4px rgba(124,58,237,.13)}
+.input.bad{border-color:#DC2626;background:#FFF5F5}
+.hint{font-size:12px;color:var(--mut);line-height:1.5}
+.mt{margin-top:14px}
+.actions{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:22px}
+.callout{border-left:3px solid var(--ie2);background:var(--tint);border-radius:0 14px 14px 0;padding:16px 18px;margin:16px 0}
+.quote{font-size:clamp(17px,2.7vw,22px);font-weight:700;letter-spacing:-.02em;line-height:1.35;margin:0}
+.num{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:11px;letter-spacing:.18em;color:var(--ie2);font-weight:700}
+.principle{display:flex;gap:14px;padding:16px 0;border-top:1px solid var(--line)}
+.principle:first-of-type{border-top:0}
+.pnum{flex:0 0 auto;width:30px;height:30px;border-radius:9px;background:var(--tint);color:var(--ie);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:13px}
+.ptitle{font-weight:800;font-size:15px;letter-spacing:.02em;text-transform:uppercase;margin-bottom:4px}
+.check{display:flex;gap:12px;align-items:flex-start;padding:12px 0;border-top:1px solid var(--line);cursor:pointer}
+.check:first-of-type{border-top:0}
+.box{flex:0 0 auto;width:22px;height:22px;border-radius:7px;border:1.5px solid #CFC9E4;display:flex;align-items:center;justify-content:center;color:#fff;background:#fff;font-size:13px;font-weight:800;line-height:1}
+.check.on .box{background:var(--ie);border-color:var(--ie)}
+.ctext{font-size:14.5px;line-height:1.5;color:#33313F}
+.check.on .ctext{color:var(--ink);font-weight:600}
+.flowline{display:flex;flex-wrap:wrap;align-items:center;gap:8px}
+.fstep{border:1px solid var(--line);border-radius:11px;padding:8px 12px;font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;background:#fff;color:var(--ink)}
+.farrow{color:var(--ie2);font-weight:800}
+.kv{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:12px 0;border-top:1px solid var(--line);flex-wrap:wrap}
+.kv:first-of-type{border-top:0}
+.kvk{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--mut);font-weight:700}
+.pill{display:inline-flex;align-items:center;gap:7px;border-radius:999px;padding:5px 12px;font-size:11.5px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;border:1px solid transparent}
+.pill.ok{background:#ECFDF5;color:#047857;border-color:#A7F3D0}
+.pill.warn{background:#FFFBEB;color:#B45309;border-color:#FDE68A}
+.pill.off{background:#F4F4F6;color:#52525B;border-color:#E4E4E7}
+.progress{height:10px;border-radius:999px;background:#EDEAF7;overflow:hidden}
+.pbar{height:100%;border-radius:999px;background:linear-gradient(90deg,var(--ie2),var(--ie));transition:width .6s}
+.metrics{display:grid;grid-template-columns:1fr;gap:12px}
+@media(min-width:700px){.metrics{grid-template-columns:1fr 1fr}}
+.metric{border:1px solid var(--line);border-radius:16px;padding:16px}
+.q{border:1px solid var(--line);border-radius:16px;padding:18px;margin-bottom:12px}
+.opt{display:flex;gap:11px;align-items:flex-start;border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin-top:9px;cursor:pointer}
+.opt:hover{border-color:var(--ie2);background:#FCFBFF}
+.opt.on{border-color:var(--ie);background:var(--tint)}
+.opt.right{border-color:#10B981;background:#F0FDF9}
+.opt.wrong{border-color:#DC2626;background:#FFF5F5}
+.optmark{flex:0 0 auto;width:22px;height:22px;border-radius:999px;border:1.5px solid #CFC9E4;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:800;color:var(--mut);background:#fff}
+.opt.on .optmark{background:var(--ie);border-color:var(--ie);color:#fff}
+.video{position:relative;width:100%;aspect-ratio:16/9;border-radius:18px;overflow:hidden;border:1px solid var(--line);background:linear-gradient(150deg,#1A1030,#2C1660 62%,#3B1080)}
+.video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.poster{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;background:transparent;border:0;cursor:pointer;font-family:inherit;color:#fff;padding:16px;text-align:center}
+.pmark{font-weight:800;letter-spacing:-.03em;font-size:clamp(20px,4.6vw,38px);text-transform:uppercase}
+.play{display:inline-flex;align-items:center;justify-content:center;width:56px;height:56px;border-radius:999px;background:#fff;color:var(--ie);box-shadow:0 16px 36px -14px rgba(0,0,0,.6)}
+.phint{color:rgba(255,255,255,.85)}
+.foot{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:10px;flex-wrap:wrap}
+.up{animation:ieUp .5s cubic-bezier(.22,.61,.36,1) both}
+@keyframes ieUp{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+.note{border-top:1px solid var(--line);margin-top:30px;padding:18px 0 0;font-size:12.5px;color:var(--mut);line-height:1.6}
+@media print{.rail,.actions,.btn,.quiet,.note{display:none!important}.stage{padding:0}}
+</style>
+</head>
+<body>
+<div id="app"></div>
+<script>
+var KEY = "ie_onboarding_standalone_v1";
+var VIDEO = "https://drive.google.com/file/d/1bsEL1tAoPCNiO2vprKgl-nXIVU85uavN/preview";
+var VIDEO_VIEW = "https://drive.google.com/file/d/1bsEL1tAoPCNiO2vprKgl-nXIVU85uavN/view";
+var TO_EMAIL = "themagicboss06@gmail.com";
+var STEPS = ["Profile","Payroll","Culture","Standard","How You Earn","Knowledge Check","Commitment"];
+var PCTS = [14,28,42,56,70,85,100];
+var REQUIRED = ["legal_first_name","legal_last_name","preferred_name","email","phone","address_line","city","state","zip","emergency_name","emergency_relationship","emergency_phone","shirt_size","position","start_date","preferred_contact"];
+var SIZES = ["XS","S","M","L","XL","2XL","3XL","4XL"];
+var PANTS = ["28","30","32","34","36","38","40","42","44","46","48"];
+var PREFS = ["Email","Phone call","Text message","In-person meeting"];
+var CLASSES = ["W-2 Employee","1099 Contractor","Part-time Associate","Intern"];
+var FREQS = ["Biweekly","Weekly","Semi-monthly","Monthly"];
+var PRINCIPLES = [
+  ["SERVE FIRST","Understand the customer’s situation before recommending a solution."],
+  ["OWN IT","Take responsibility for your communication, commitments, work, and results."],
+  ["BE REAL","Never mislead a customer, make promises we cannot keep, or sell something simply because it creates a commission."],
+  ["THINK BIGGER","Look beyond the immediate transaction. Look for ways technology, creativity, and problem-solving can create long-term value."],
+  ["WIN TOGETHER","Share knowledge, opportunities, resources, and success. We do not compete against our own team."]
+];
+var STANDARD = ["Be professional","Be honest","Be prepared","Communicate clearly","Follow through","Protect customer information","Respect teammates","Ask questions when unsure","Never intentionally mislead a customer","Protect the reputation of Impact Everything"];
+var SALES = ["LISTEN","UNDERSTAND","IDENTIFY THE OPPORTUNITY","RECOMMEND","EXPLAIN","FOLLOW UP","CLOSE","SUPPORT"];
+var COMMITS = ["Showing up prepared","Communicating professionally","Following through on commitments","Learning Impact Everything’s services","Learning and using company systems correctly","Protecting customer information","Documenting important customer interactions","Following up when I say I will","Asking questions when I don’t know something","Helping teammates succeed","Representing Impact Everything professionally","Treating customers and teammates with respect"];
+var FIRST30 = [
+  ["WEEK 1 - LEARN",["Company","Culture","Services","Systems","Sales philosophy"]],
+  ["WEEK 2 - PRACTICE",["Sales conversations","Product knowledge","Customer scenarios","Objection handling","Role-play"]],
+  ["WEEK 3 - PERFORM",["Begin working qualified opportunities with coaching and supervision."]],
+  ["WEEK 4 - OWN",["Begin operating with increasing independence while maintaining Impact Everything standards."]]
+];
+var COMP = [
+  ["Base pay","$16/hour base pay"],
+  ["Direct sales commission","8% commission on qualifying direct sales"],
+  ["Lead referral commission","4% commission on qualified leads generated by the associate when another team member closes the sale"],
+  ["Recurring revenue","10% of collected recurring revenue for the first 6 months"],
+  ["Performance bonuses","Performance bonuses based on qualifying monthly sales milestones"],
+  ["Earning growth","Opportunities for increased earning potential based on sustained performance"],
+  ["Payroll schedule","Payroll paid biweekly"],
+  ["Commission basis","Commission is based on qualifying customer payments actually collected"]
+];
+var QUIZ = [
+  ["What does WE ARE ONE mean?","Our culture",1,["Each associate works independently and reports results on their own","We are one team working toward one mission, and we do not compete against our own team","One person is responsible for all company results","We all work from one office location"]],
+  ["What is the Impact Everything mission?","Our mission",2,["To sell as many services as possible each month","To offer the lowest prices in the market","To help businesses grow by connecting people, technology, and opportunity into practical solutions that create measurable impact","To work only with large enterprise customers"]],
+  ["Which of these are the five core values?","Our culture",3,["Hustle, Close, Upsell, Repeat, Win","Listen, Sell, Deliver, Invoice, Follow Up","Speed, Volume, Price, Margin, Growth","Serve First, Own It, Be Real, Think Bigger, Win Together"]],
+  ["What is our sales philosophy?","Sales philosophy",0,["We don’t push. We solve.","Always be closing, no matter what","Talk price first, ask questions later","Present every service on the list to every customer"]],
+  ["When should you recommend a product or service?","Sales philosophy",3,["Whenever it earns the highest commission","At the end of every call, whether or not the customer needs it","Only when the customer asks about it directly","When you understand the customer’s situation, they genuinely need it, and they understand why"]],
+  ["What does it mean to own your results?","Our culture",1,["Blame the market when a deal does not close","Take responsibility for your communication, commitments, work, and results","Claim credit for wins only","Wait for a manager to review every decision first"]],
+  ["Who does an associate represent when communicating with a customer?","The standard",3,["Only themselves","Their direct manager","The customer’s competitor","Impact Everything - every conversation, call, meeting, and message represents the company"]]
+];
+var ACKS = [
+  "I have reviewed the Impact Everything mission and culture.",
+  "I understand the Impact Everything sales philosophy.",
+  "I understand the compensation overview.",
+  "I understand the expectations of an Impact Everything associate.",
+  "I understand that the official employment and compensation documents control where applicable."
+];
+
+var S;
+function blank(){
+  return { step:0, profile:{}, payroll:{ pay_rate:"$16.00 per hour", commission_plan:"Standard associate plan", payroll_frequency:"Biweekly", employment_classification:"" }, compAck:false, commits:[], acks:[], quiz:{}, quizOut:null, videoOpen:false, started:false, done:false, tried:false, atHome:false };
+}
+function load(){
+  try { S = JSON.parse(localStorage.getItem(KEY) || "null"); } catch (e) { S = null; }
+  if (!S || typeof S !== "object") S = blank();
+  var b = blank();
+  for (var k in b) { if (S[k] === undefined) S[k] = b[k]; }
+}
+function save(){ try { localStorage.setItem(KEY, JSON.stringify(S)); } catch (e) {} }
+function esc(s){ return String(s === undefined || s === null ? "" : s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;"); }
+function has(a,v){ return a.indexOf(v) > -1; }
+function name(){ return S.profile.preferred_name || S.profile.legal_first_name || "Associate"; }
+
+function field(o){
+  var v = (o.scope === "payroll" ? S.payroll : S.profile)[o.k] || "";
+  var bad = (S.tried && o.req && !String(v).trim()) ? " bad" : "";
+  var sc = o.scope === "payroll" ? "payroll" : "profile";
+  var inner;
+  if (o.opts) {
+    inner = '<select class="input' + bad + '" data-s="' + sc + '" data-k="' + o.k + '"><option value="">Select...</option>' + o.opts.map(function(x){ return '<option' + (v === x ? " selected" : "") + ">" + esc(x) + "</option>"; }).join("") + "</select>";
+  } else if (o.area) {
+    inner = '<textarea class="input' + bad + '" rows="3" data-s="' + sc + '" data-k="' + o.k + '">' + esc(v) + "</textarea>";
+  } else {
+    inner = '<input class="input' + bad + '" type="' + (o.type || "text") + '" data-s="' + sc + '" data-k="' + o.k + '" value="' + esc(v) + '"' + (o.ph ? ' placeholder="' + esc(o.ph) + '"' : "") + ">";
+  }
+  return '<label class="field' + (o.full ? " full" : "") + '"><span class="label">' + o.label + (o.req ? ' <span class="req">*</span>' : "") + "</span>" + inner + (o.hint ? '<span class="hint">' + o.hint + "</span>" : "") + "</label>";
+}
+function pill(v){
+  var s = String(v || "Pending");
+  var cls = "off";
+  if (["Complete","Pass","Passed","Active","Acknowledged","100% Complete"].indexOf(s) > -1) cls = "ok";
+  else if (["Pending","In Progress","Needs Review"].indexOf(s) > -1) cls = "warn";
+  return '<span class="pill ' + cls + '">' + esc(s) + "</span>";
+}
+function kv(k,v){ return '<div class="kv"><span class="kvk">' + k + '</span><span class="p" style="text-align:right">' + esc(v === 0 ? "0" : (v || "-")) + "</span></div>"; }
+function actions(back, next, nextLabel){
+  return '<div class="actions">' + (back ? '<button class="btn ghost" data-act="go" data-val="' + back + '">Back</button>' : '<span></span>') + (next ? '<button class="btn" data-act="' + next + '">' + nextLabel + "</button>" : "") + "</div>";
+}
+
+function landing(){
+  var lines = ["One Team","One Mission","One Standard","One Responsibility","One Reputation"];
+  return '<div class="hero"><div class="glow"></div><div class="dots"></div><div class="wrap hero-in up">' +
+    '<div class="mono">IMPACT EVERYTHING - ASSOCIATE ONBOARDING</div>' +
+    '<h1 class="display">WELCOME TO IMPACT EVERYTHING</h1>' +
+    '<p class="sub">You are not just joining a company. You are joining a team committed to helping businesses move forward.</p>' +
+    '<div class="badge">WE ARE ONE.</div>' +
+    '<div class="onelines">' + lines.map(function(l){ return '<div class="oneline"><span class="dot"></span>' + l + "</div>"; }).join("") + "</div>" +
+    '<div style="display:flex;gap:16px;align-items:center;flex-wrap:wrap">' +
+      '<button class="btn lg" data-act="start">START ONBOARDING</button>' +
+      '<span class="mono" style="color:#6B7280">ABOUT 20-30 MINUTES</span>' +
+    "</div>" +
+    '<div style="margin-top:36px;max-width:720px">' +
+      '<div class="mono">IMPACT EVERYTHING - WELCOME VIDEO</div>' +
+      '<div class="video" style="margin-top:10px">' + (S.videoOpen
+        ? '<iframe title="Impact Everything welcome video" src="' + VIDEO + '" allow="autoplay; fullscreen" allowfullscreen loading="lazy"></iframe>'
+        : '<button class="poster" data-act="video"><span class="pmark">WE ARE ONE.</span><span class="play">&#9654;</span><span class="phint mono">PLAY THE WELCOME VIDEO</span></button>') + "</div>" +
+      '<div class="foot"><span class="hint">See who we are and how we work.</span><a class="quiet" href="' + VIDEO_VIEW + '" target="_blank" rel="noreferrer">Open in Google Drive</a></div>' +
+    "</div>" +
+    (S.started ? '<div style="margin-top:30px"><button class="btn ghost" data-act="resume">CONTINUE WHERE YOU LEFT OFF (STEP ' + S.step + " OF 7)</button></div>" : "") +
+    '<div class="note"><strong>How this page works.</strong> Your answers are saved in this browser on this device only, so you can leave and come back. Nothing is sent to Impact Everything automatically. When you finish, you can download or email your onboarding summary.</div>' +
+  "</div></div>";
+}
+
+function rail(){
+  return '<div class="rail"><div class="wrap"><div class="rail-top"><div class="brand"><span class="mark">IE</span><span class="mono brandname">IMPACT EVERYTHING</span></div><div class="mono count">STEP ' + S.step + " OF 7</div></div>" +
+    '<div class="segs">' + STEPS.map(function(s,i){ var n = i + 1; return '<div class="seg' + (n < S.step ? " done" : n === S.step ? " now" : "") + '"></div>'; }).join("") + "</div>" +
+    '<div class="rail-bot"><span class="mono stepname">' + STEPS[S.step - 1].toUpperCase() + '</span><button class="quiet" data-act="home">Save &amp; exit</button></div>' +
+  "</div></div>";
+}
+
+function step1(){
+  return '<div class="up"><div class="stephead"><div class="mono">STEP 1 OF 7</div><h1 class="h1">NEW ASSOCIATE PROFILE</h1><p class="p">Everything here saves as you go. You can close this page and come back to finish later.</p></div>' +
+  '<div class="card"><div class="head"><h3 class="h3">A - Personal Information</h3><span class="tag">Required fields marked *</span></div><div class="grid2">' +
+    field({label:"Legal first name",k:"legal_first_name",req:1}) +
+    field({label:"Legal middle name or initial",k:"legal_middle_name"}) +
+    field({label:"Legal last name",k:"legal_last_name",req:1}) +
+    field({label:"Preferred name",k:"preferred_name",req:1,hint:"This is what we will call you."}) +
+    field({label:"Personal email",k:"email",type:"email",req:1}) +
+    field({label:"Personal phone",k:"phone",type:"tel",req:1}) +
+    field({label:"Home address",k:"address_line",req:1,full:1}) +
+    field({label:"City",k:"city",req:1}) +
+    field({label:"State",k:"state",req:1,ph:"FL"}) +
+    field({label:"ZIP code",k:"zip",req:1}) +
+  '</div><p class="hint mt">Date of birth is not collected here. It is only added later if payroll or employment requires it.</p></div>' +
+  '<div class="card"><div class="head"><h3 class="h3">B - Emergency Contact</h3></div><div class="grid2">' +
+    field({label:"Emergency contact full name",k:"emergency_name",req:1}) +
+    field({label:"Relationship",k:"emergency_relationship",req:1,ph:"Spouse, parent, sibling..."}) +
+    field({label:"Phone number",k:"emergency_phone",type:"tel",req:1}) +
+    field({label:"Secondary phone (optional)",k:"emergency_phone_secondary",type:"tel"}) +
+  "</div></div>" +
+  '<div class="card"><div class="head"><h3 class="h3">C - Uniform Information</h3></div><div class="grid2">' +
+    field({label:"Shirt size",k:"shirt_size",opts:SIZES,req:1}) +
+    field({label:"Pants or shorts size",k:"pants_size",opts:PANTS}) +
+    field({label:"Jacket or outerwear size",k:"jacket_size",opts:SIZES}) +
+    field({label:"Other uniform notes",k:"uniform_notes",ph:"Anything we should know"}) +
+  "</div></div>" +
+  '<div class="card"><div class="head"><h3 class="h3">D - Work Information</h3></div><div class="grid2">' +
+    field({label:"Position",k:"position",req:1,ph:"Sales Representative"}) +
+    field({label:"Department or team",k:"department",ph:"Sales, Marketing, Operations..."}) +
+    field({label:"Start date",k:"start_date",type:"date",req:1}) +
+    field({label:"Direct manager",k:"manager"}) +
+    field({label:"Associate ID (if assigned)",k:"associate_code",hint:"Leave blank if you have not been given one."}) +
+    field({label:"Preferred communication method",k:"preferred_contact",opts:PREFS,req:1}) +
+  "</div></div>" + actions(0,"nextStep1","Save &amp; continue") + "</div>";
+}
+
+function step2(){
+  return '<div class="up"><div class="stephead"><div class="mono">STEP 2 OF 7</div><h1 class="h1">PAYROLL &amp; EMPLOYMENT SETUP</h1><p class="p">Tell us how you are set up, and we will note what is still outstanding.</p></div>' +
+  '<div class="callout"><div class="mono" style="margin-bottom:8px">SECURITY NOTICE</div><p class="p">Some employment and payroll information is sensitive. Impact Everything should not store banking credentials or other highly sensitive financial information in this application unless an approved secure payroll system is being used.</p></div>' +
+  '<div class="card"><div class="head"><h3 class="h3">Employment details</h3></div><div class="grid2">' +
+    field({label:"Employment classification",k:"employment_classification",opts:CLASSES,req:1,scope:"payroll"}) +
+    field({label:"Pay rate",k:"pay_rate",scope:"payroll"}) +
+    field({label:"Commission plan",k:"commission_plan",scope:"payroll"}) +
+    field({label:"Payroll frequency",k:"payroll_frequency",opts:FREQS,scope:"payroll"}) +
+    field({label:"Start date",k:"payroll_start_date",type:"date",scope:"payroll"}) +
+    field({label:"Manager",k:"payroll_manager",scope:"payroll"}) +
+    field({label:"Notes for payroll",k:"notes",area:1,full:1,scope:"payroll"}) +
+  "</div></div>" +
+  '<div class="card"><div class="head"><h3 class="h3">Setup status</h3><span class="tag">Confirmed by management</span></div>' +
+    '<div class="kv"><span class="kvk">Payroll setup</span>' + pill("Pending") + "</div>" +
+    '<div class="kv"><span class="kvk">Direct deposit</span>' + pill("Pending") + "</div>" +
+    '<div class="kv"><span class="kvk">Employment documents</span>' + pill("Pending") + "</div>" +
+    '<div class="kv"><span class="kvk">Tax / payroll setup</span>' + pill("Pending") + "</div>" +
+  "</div>" +
+  '<div class="card"><div class="head"><h3 class="h3">Direct deposit</h3>' + pill("Pending") + "</div>" +
+    '<p class="p">Impact Everything does not collect or store your bank account or routing numbers on this page.</p>' +
+    '<div style="margin-top:14px"><button class="btn" data-act="dd">COMPLETE DIRECT DEPOSIT SETUP</button></div>' +
+    (S.dd ? '<div class="callout"><div class="mono" style="margin-bottom:8px">HOW TO COMPLETE IT</div><p class="p">Direct deposit is completed through the company’s approved payroll provider or the official direct-deposit form provided by your manager.</p><ol style="margin:12px 0 0;padding-left:20px;color:#3F3D4D;font-size:14.5px;line-height:1.7"><li>Ask your manager for the official direct-deposit form or the payroll provider invite.</li><li>Complete it directly with the approved payroll provider.</li><li>Once it is finished, your manager marks your direct deposit status as complete.</li></ol></div>' : "") +
+  "</div>" + actions(1,"nextStep2","Save &amp; continue") + "</div>";
+}
+
+function step3(){
+  return '<div class="up"><div class="stephead"><div class="mono">STEP 3 OF 7</div><h1 class="h1">OUR MISSION &amp; CULTURE</h1></div>' +
+  '<div class="card"><div class="num">OUR MISSION</div><p class="quote mt">Impact Everything exists to help businesses grow by connecting people, technology, and opportunity into practical solutions that create measurable impact.</p>' +
+    '<p class="p mt">Impact Everything helps businesses improve through technology, digital solutions, marketing, automation, customer communication, and practical business support.</p>' +
+    '<div class="callout mt"><p class="p">We don’t simply sell services. We help businesses identify opportunities, solve problems, and create a stronger foundation for growth.</p></div></div>' +
+  '<div class="card dark"><div class="mono" style="color:#C4B5FD">OUR CULTURE</div><h2 class="h2" style="font-size:clamp(30px,6.4vw,46px);letter-spacing:-.045em">WE ARE ONE.</h2>' +
+    '<p class="p" style="color:rgba(255,255,255,.88)">We are one team working toward one mission. Individual success matters, but the strength of the company comes from how well we work together.</p></div>' +
+  '<div class="card"><div class="head"><h3 class="h3">The five principles</h3></div>' +
+    PRINCIPLES.map(function(p,i){ return '<div class="principle"><div class="pnum">' + (i+1) + '</div><div><div class="ptitle">' + p[0] + '</div><p class="p">' + p[1] + "</p></div></div>"; }).join("") +
+  "</div>" + actions(2,"go4","Continue") + "</div>";
+}
+
+function step4(){
+  return '<div class="up"><div class="stephead"><div class="mono">STEP 4 OF 7</div><h1 class="h1">EVERY INTERACTION IS AN IMPACT.</h1><p class="p">Every conversation, call, meeting, message, and customer interaction represents Impact Everything.</p></div>' +
+  '<div class="card"><div class="head"><h3 class="h3">The Impact Everything standard</h3></div><div class="grid2">' +
+    STANDARD.map(function(s){ return '<div class="check on" style="border-top:0;padding:9px 0"><span class="box">&#10003;</span><span class="ctext">' + s + "</span></div>"; }).join("") +
+  '</div><div class="callout mt"><p class="quote">How we treat people is part of what we sell.</p></div></div>' +
+  '<div class="card"><div class="num">SALES PHILOSOPHY</div><h2 class="h2">WE DON’T PUSH. WE SOLVE.</h2>' +
+    '<p class="p">Our sales process begins with understanding the customer’s business - not immediately trying to sell them something.</p>' +
+    '<div class="flowline mt">' + SALES.map(function(s,i){ return '<span class="fstep">' + s + '</span>' + (i < SALES.length - 1 ? '<span class="farrow">&#8594;</span>' : ""); }).join("") + "</div>" +
+    '<div class="callout mt"><p class="quote">If the customer doesn’t need it, don’t sell it. If they do need it, make sure they understand why.</p></div>' +
+    '<p class="hint mt">Focus on long-term relationships rather than pressure tactics or unnecessary upselling.</p></div>' +
+  actions(3,"go5","Continue") + "</div>";
+}
+
+function step5(){
+  return '<div class="up"><div class="stephead"><div class="mono">STEP 5 OF 7</div><h1 class="h1">HOW YOU EARN</h1><p class="p">Compensation Overview - See Official Compensation Agreement for Complete Terms.</p></div>' +
+  '<div class="card"><div class="head"><h3 class="h3">Compensation overview</h3><span class="tag">Overview only</span></div>' +
+    COMP.map(function(c){ return '<div class="kv" style="align-items:flex-start"><span class="kvk" style="flex:0 0 176px">' + c[0] + '</span><span class="p" style="flex:1">' + c[1] + "</span></div>"; }).join("") +
+    '<div class="callout mt"><p class="p">This section is an overview only. The official compensation agreement controls the detailed terms. If anything here differs from the official agreement, the official agreement controls.</p></div>' +
+    '<button class="btn ghost sm" style="margin-top:14px" data-act="comp">' + (S.compOpen ? "HIDE ACKNOWLEDGMENT" : "VIEW / ACKNOWLEDGE OFFICIAL COMPENSATION AGREEMENT") + "</button>" +
+    (S.compOpen ? '<div class="callout"><p class="p">Ask your manager for the current official compensation agreement document if you have not received it. The document contains the complete and controlling terms of pay, commission, and bonuses.</p></div>' : "") +
+    '<div class="check' + (S.compAck ? " on" : "") + '" style="margin-top:16px" data-act="compAck"><span class="box">' + (S.compAck ? "&#10003;" : "") + '</span><span class="ctext">I understand this is an overview, and that the official compensation agreement controls the detailed terms.</span></div>' +
+  "</div>" +
+  '<div class="card"><div class="head"><h3 class="h3">I COMMIT TO</h3><span class="tag">' + S.commits.length + " of " + COMMITS.length + " acknowledged</span></div>" +
+    COMMITS.map(function(c){ var on = has(S.commits,c); return '<div class="check' + (on ? " on" : "") + '" data-act="commit" data-val="' + esc(c) + '"><span class="box">' + (on ? "&#10003;" : "") + '</span><span class="ctext">' + c + "</span></div>"; }).join("") +
+  "</div>" +
+  '<div class="card"><div class="head"><h3 class="h3">FIRST 30 DAYS</h3></div><div class="metrics">' +
+    FIRST30.map(function(w){ return '<div class="metric"><div class="ptitle" style="color:var(--ie)">' + w[0] + '</div><ul style="margin:8px 0 0;padding-left:18px">' + w[1].map(function(i){ return '<li class="p" style="margin-bottom:4px">' + i + "</li>"; }).join("") + "</ul></div>"; }).join("") +
+  "</div></div>" + actions(4,"nextStep5","Continue") + "</div>";
+}
+
+function step6(){
+  var out = "";
+  if (S.quizOut) {
+    out = '<div class="card' + (S.quizOut.passed ? " tint" : "") + '"><div class="head"><h3 class="h3">' + (S.quizOut.passed ? "PASS" : "NEEDS REVIEW") + '</h3><span class="tag">' + S.quizOut.score + " of " + QUIZ.length + ' correct</span></div>' +
+      (S.quizOut.passed
+        ? '<p class="p">You passed. The next step is your final commitment.</p>'
+        : '<div><p class="p">Review the sections below, then retake the check. Your answers stay on this screen.</p>' +
+          QUIZ.map(function(q,i){ if (S.quiz[i] === q[2]) return ""; return '<div class="kv" style="align-items:flex-start"><span class="kvk" style="flex:0 0 34px">Q' + (i+1) + '</span><span class="p" style="flex:1">' + q[0] + '<br><span class="hint">Review: ' + q[1] + "</span></span></div>"; }).join("") + "</div>") + "</div>";
+  }
+  var body = QUIZ.map(function(q,i){
+    return '<div class="q"><div class="mono" style="color:#6B7280">QUESTION ' + (i+1) + " OF " + QUIZ.length + '</div><p class="h3" style="font-size:16px;margin:8px 0 2px">' + q[0] + "</p>" +
+      q[3].map(function(o,j){
+        var chosen = S.quiz[i] === j;
+        var cls = S.quizOut ? (j === q[2] ? " right" : (chosen ? " wrong" : "")) : (chosen ? " on" : "");
+        return '<div class="opt' + cls + '" data-act="opt" data-val="' + i + ":" + j + '"><span class="optmark">' + String.fromCharCode(65 + j) + '</span><span class="ctext">' + o + "</span></div>";
+      }).join("") + "</div>";
+  }).join("");
+  var next = S.quizOut && S.quizOut.passed
+    ? '<button class="btn" data-act="go7">Continue</button>'
+    : S.quizOut
+      ? '<button class="btn" data-act="retake">Retake knowledge check</button>'
+      : '<button class="btn" data-act="submitQuiz">Submit answers</button>';
+  return '<div class="up"><div class="stephead"><div class="mono">STEP 6 OF 7</div><h1 class="h1">KNOWLEDGE CHECK</h1><p class="p">Seven questions. You need 5 correct to pass, and you can retake it as many times as you need.</p></div>' + out + body + '<div class="actions"><button class="btn ghost" data-act="go" data-val="5">Back</button>' + next + "</div></div>";
+}
+
+function step7(){
+  return '<div class="up"><div class="stephead"><div class="mono">STEP 7 OF 7</div><h1 class="h1">WELCOME TO IMPACT EVERYTHING.</h1><p class="p">We are building more than a sales team. We are building a team that helps businesses grow, creates opportunities for people, and leaves every customer better positioned than we found them.</p></div>' +
+  '<div class="card dark"><h2 class="h2" style="font-size:clamp(30px,6.4vw,46px);letter-spacing:-.045em">WE ARE ONE.</h2><p class="p" style="color:rgba(255,255,255,.88)">One Team. One Mission. One Standard. One Responsibility. One Reputation.</p></div>' +
+  '<div class="card"><div class="head"><h3 class="h3">Final acknowledgment</h3><span class="tag">' + S.acks.length + " of " + ACKS.length + " confirmed</span></div>" +
+    ACKS.map(function(a){ var on = has(S.acks,a); return '<div class="check' + (on ? " on" : "") + '" data-act="ack" data-val="' + esc(a) + '"><span class="box">' + (on ? "&#10003;" : "") + '</span><span class="ctext">' + a + "</span></div>"; }).join("") +
+  "</div>" + actions(6,"complete","COMPLETE ONBOARDING") + "</div>";
+}
+
+function done(){
+  var score = S.quizOut ? S.quizOut.score + " of " + QUIZ.length + " (" + (S.quizOut.passed ? "Pass" : "Needs Review") + ")" : "Not taken";
+  return '<div class="wrap stage up"><div class="mono">ONBOARDING SUMMARY</div><h1 class="h1">WELCOME, ' + esc(name()).toUpperCase() + "</h1>" +
+  '<div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:12px">' + pill("100% Complete") + pill("Profile Complete") + "</div>" +
+  '<div class="card mt" style="margin-top:24px"><div class="head"><h3 class="h3">Your onboarding record</h3><span class="tag">Saved on this device</span></div>' +
+    '<div class="progress"><div class="pbar" style="width:100%"></div></div><div class="mt">' +
+    kv("Legal name", [S.profile.legal_first_name, S.profile.legal_middle_name, S.profile.legal_last_name].filter(Boolean).join(" ")) +
+    kv("Preferred name", S.profile.preferred_name) +
+    kv("Email", S.profile.email) +
+    kv("Phone", S.profile.phone) +
+    kv("Address", [S.profile.address_line, S.profile.city, S.profile.state, S.profile.zip].filter(Boolean).join(", ")) +
+    kv("Emergency contact", [S.profile.emergency_name, S.profile.emergency_relationship, S.profile.emergency_phone].filter(Boolean).join(" - ")) +
+    kv("Uniform", [S.profile.shirt_size && "Shirt " + S.profile.shirt_size, S.profile.pants_size && "Pants " + S.profile.pants_size, S.profile.jacket_size && "Jacket " + S.profile.jacket_size].filter(Boolean).join(", ")) +
+    kv("Position", S.profile.position) +
+    kv("Department", S.profile.department) +
+    kv("Manager", S.profile.manager) +
+    kv("Start date", S.profile.start_date) +
+    kv("Associate ID", S.profile.associate_code) +
+    kv("Preferred communication", S.profile.preferred_contact) +
+    kv("Employment classification", S.payroll.employment_classification) +
+    kv("Payroll frequency", S.payroll.payroll_frequency) +
+    kv("Compensation overview", S.compAck ? "Acknowledged" : "Not acknowledged") +
+    kv("Commitments acknowledged", S.commits.length + " of " + COMMITS.length) +
+    kv("Knowledge check", score) +
+    "</div></div>" +
+  '<div class="card"><div class="head"><h3 class="h3">Send this to Impact Everything</h3></div><p class="p">This copy lives in your browser. Download it or email it so it can be added to the team record, and your manager can confirm payroll setup, employment documents, direct deposit, and training.</p>' +
+    '<div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:16px">' +
+      '<button class="btn" data-act="download">Download my onboarding summary</button>' +
+      '<button class="btn ghost" data-act="email">Email it to Impact Everything</button>' +
+      '<button class="btn ghost" data-act="print">Print / Save as PDF</button>' +
+    "</div>" +
+    '<p class="hint mt">Email ' + TO_EMAIL + " and attach the downloaded summary file.</p></div>" +
+  '<div class="card"><div class="head"><h3 class="h3">What happens next</h3></div>' +
+    kv("Payroll setup", "Pending - your manager completes this with the approved provider") +
+    kv("Employment documents", "Pending - bring your documents to your manager") +
+    kv("Direct deposit", "Pending - complete the official form or provider invite") +
+    kv("Training", "In Progress - your 30-day plan starts in week 1") +
+  "</div>" +
+  '<div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:20px"><button class="btn ghost" data-act="home">Back to start</button><button class="quiet" data-act="reset">Start a new onboarding on this device</button></div>' +
+  '<div class="note">Standalone onboarding page for Impact Everything. Your answers stay in this browser on this device; nothing is sent automatically. Impact Everything does not collect bank account or routing numbers here.</div></div>';
+}
+
+function render(){
+  var app = document.getElementById("app");
+  if (S.atHome || S.step === 0) { app.innerHTML = landing(); return; }
+  if (S.done) { app.innerHTML = done(); window.scrollTo(0,0); return; }
+  var body = S.step === 1 ? step1() : S.step === 2 ? step2() : S.step === 3 ? step3() : S.step === 4 ? step4() : S.step === 5 ? step5() : S.step === 6 ? step6() : step7();
+  app.innerHTML = rail() + '<div class="wrap stage">' + body + "</div>";
+  window.scrollTo(0,0);
+}
+
+function summaryText(){
+  var L = [];
+  L.push("IMPACT EVERYTHING - NEW ASSOCIATE ONBOARDING SUMMARY");
+  L.push("Submitted: " + new Date().toLocaleString());
+  L.push("");
+  L.push("PROFILE");
+  L.push("Legal name: " + [S.profile.legal_first_name,S.profile.legal_middle_name,S.profile.legal_last_name].filter(Boolean).join(" "));
+  L.push("Preferred name: " + (S.profile.preferred_name || ""));
+  L.push("Email: " + (S.profile.email || ""));
+  L.push("Phone: " + (S.profile.phone || ""));
+  L.push("Address: " + [S.profile.address_line,S.profile.city,S.profile.state,S.profile.zip].filter(Boolean).join(", "));
+  L.push("Emergency contact: " + [S.profile.emergency_name,S.profile.emergency_relationship,S.profile.emergency_phone,S.profile.emergency_phone_secondary].filter(Boolean).join(" - "));
+  L.push("Uniform: " + [S.profile.shirt_size && "Shirt " + S.profile.shirt_size, S.profile.pants_size && "Pants " + S.profile.pants_size, S.profile.jacket_size && "Jacket " + S.profile.jacket_size].filter(Boolean).join(", "));
+  L.push("Uniform notes: " + (S.profile.uniform_notes || ""));
+  L.push("");
+  L.push("WORK");
+  L.push("Position: " + (S.profile.position || ""));
+  L.push("Department: " + (S.profile.department || ""));
+  L.push("Manager: " + (S.profile.manager || ""));
+  L.push("Start date: " + (S.profile.start_date || ""));
+  L.push("Associate ID: " + (S.profile.associate_code || ""));
+  L.push("Preferred communication: " + (S.profile.preferred_contact || ""));
+  L.push("");
+  L.push("PAYROLL & EMPLOYMENT SETUP");
+  L.push("Employment classification: " + (S.payroll.employment_classification || ""));
+  L.push("Pay rate: " + (S.payroll.pay_rate || ""));
+  L.push("Commission plan: " + (S.payroll.commission_plan || ""));
+  L.push("Payroll frequency: " + (S.payroll.payroll_frequency || ""));
+  L.push("Payroll start date: " + (S.payroll.payroll_start_date || ""));
+  L.push("Payroll manager: " + (S.payroll.payroll_manager || ""));
+  L.push("Payroll notes: " + (S.payroll.notes || ""));
+  L.push("Payroll setup: Pending (no bank details collected on this page)");
+  L.push("");
+  L.push("ACKNOWLEDGMENTS");
+  L.push("Compensation overview acknowledged: " + (S.compAck ? "Yes" : "No"));
+  L.push("Commitments acknowledged: " + S.commits.length + " of " + COMMITS.length);
+  S.commits.forEach(function(c){ L.push("  - " + c); });
+  L.push("Final acknowledgments: " + S.acks.length + " of " + ACKS.length);
+  S.acks.forEach(function(a){ L.push("  - " + a); });
+  L.push("");
+  L.push("KNOWLEDGE CHECK");
+  L.push("Result: " + (S.quizOut ? S.quizOut.score + " of " + QUIZ.length + " - " + (S.quizOut.passed ? "Pass" : "Needs Review") : "Not taken"));
+  L.push("");
+  L.push("Completed on this device. Send this summary to " + TO_EMAIL + " to have it added to the Impact Everything team record.");
+  return L.join("\n");
+}
+
+function downloadSummary(){
+  var text = summaryText();
+  var blob = new Blob([text], { type: "text/plain" });
+  var url = URL.createObjectURL(blob);
+  var a = document.createElement("a");
+  a.href = url;
+  a.download = "impact-everything-onboarding-summary.txt";
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+}
+
+document.addEventListener("input", function(e){
+  var t = e.target;
+  var k = t.getAttribute && t.getAttribute("data-k");
+  if (!k) return;
+  var sc = t.getAttribute("data-s");
+  if (sc === "payroll") S.payroll[k] = t.value; else S.profile[k] = t.value;
+  save();
+});
+document.addEventListener("change", function(e){
+  var t = e.target;
+  var k = t.getAttribute && t.getAttribute("data-k");
+  if (!k) return;
+  var sc = t.getAttribute("data-s");
+  if (sc === "payroll") S.payroll[k] = t.value; else S.profile[k] = t.value;
+  save();
+});
+document.addEventListener("click", function(e){
+  var t = e.target.closest ? e.target.closest("[data-act]") : null;
+  if (!t) return;
+  var a = t.getAttribute("data-act");
+  var v = t.getAttribute("data-val");
+  if (a === "start") { S = blank(); S.started = true; S.atHome = false; S.step = 1; save(); render(); }
+  else if (a === "resume") { S.atHome = false; if (!S.step) S.step = 1; save(); render(); }
+  else if (a === "home") { S.atHome = true; save(); render(); }
+  else if (a === "video") { S.videoOpen = true; save(); render(); }
+  else if (a === "dd") { S.dd = !S.dd; save(); render(); }
+  else if (a === "comp") { S.compOpen = !S.compOpen; save(); render(); }
+  else if (a === "compAck") { S.compAck = !S.compAck; save(); render(); }
+  else if (a === "commit") { S.commits = has(S.commits, v) ? S.commits.filter(function(x){ return x !== v; }) : S.commits.concat([v]); save(); render(); }
+  else if (a === "ack") { S.acks = has(S.acks, v) ? S.acks.filter(function(x){ return x !== v; }) : S.acks.concat([v]); save(); render(); }
+  else if (a === "opt") { var p = v.split(":"); S.quiz[p[0]] = parseInt(p[1], 10); save(); render(); }
+  else if (a === "go" || a === "go4" || a === "go5" || a === "go7") {
+    var st = a === "go" ? parseInt(v, 10) : a === "go4" ? 4 : a === "go5" ? 5 : 7;
+    S.step = st; save(); render();
+  }
+  else if (a === "nextStep1") {
+    S.tried = true;
+    var missing = REQUIRED.filter(function(k){ return !String(S.profile[k] || "").trim(); });
+    if (missing.length) { save(); render(); alert("Please complete the highlighted required fields."); return; }
+    S.step = 2; save(); render();
+  }
+  else if (a === "nextStep2") {
+    S.tried = true;
+    if (!String(S.payroll.employment_classification || "").trim()) { save(); render(); alert("Please choose your employment classification."); return; }
+    S.step = 3; save(); render();
+  }
+  else if (a === "nextStep5") {
+    if (!S.compAck) { alert("Please acknowledge the compensation overview to continue."); return; }
+    if (S.commits.length < COMMITS.length) { alert("Please review and check all " + COMMITS.length + " commitments to continue."); return; }
+    S.step = 6; save(); render();
+  }
+  else if (a === "submitQuiz") {
+    var answered = 0;
+    for (var i = 0; i < QUIZ.length; i++) { if (S.quiz[i] !== undefined) answered++; }
+    if (answered < QUIZ.length) { alert("Please answer all " + QUIZ.length + " questions."); return; }
+    var score = 0;
+    for (var j = 0; j < QUIZ.length; j++) { if (S.quiz[j] === QUIZ[j][2]) score++; }
+    S.quizOut = { score: score, passed: score >= 5 };
+    save(); render();
+  }
+  else if (a === "retake") { S.quiz = {}; S.quizOut = null; save(); render(); }
+  else if (a === "complete") {
+    if (S.acks.length < ACKS.length) { alert("Please confirm all " + ACKS.length + " acknowledgments to complete onboarding."); return; }
+    S.done = true; save(); render();
+  }
+  else if (a === "download") { downloadSummary(); }
+  else if (a === "email") {
+    var sub = "Onboarding Summary - " + name();
+    window.location.href = "mailto:" + TO_EMAIL + "?subject=" + encodeURIComponent(sub) + "&body=" + encodeURIComponent("Attached is my completed Impact Everything onboarding summary.");
+  }
+  else if (a === "print") { window.print(); }
+  else if (a === "reset") { if (confirm("Start a new onboarding on this device? The current answers will be cleared.")) { S = blank(); save(); render(); } }
+});
+
+load();
+render();
+</script>
+</body>
+</html>
